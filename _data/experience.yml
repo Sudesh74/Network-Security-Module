@@ -1,4 +1,49 @@
-- role: Open Source Fellow
-  company: MLH Fellowship
-  dates: Summer 2020
-  logo: fellowship.svg
+- role: Student
+  University: Essex online
+  dates: November 2023
+
+<Header> Below is my initial disccusion posted to the forum.
+
+  < Header 1 > Module 1-3  Disscussion:
+  
+  In a world that is moving headlong into Digitalisation of economy, security specifically cyber security has become inherently more important to keep transactions, personal identifiable information, and the front end usually a web page safe. Security concerns range from secure coding, hacking , transportation, known and unknown vulnerabilities, use of new and emerging technologies etc.
+A concern raised by Barnes, S (2016) not usually considered is web quality and the fact that 46% of transactional attempts to purchase are cancelled and as high as 75% in Spain. This is also a concern in developing countries such as African countries in which we at work tried to implement OTP for banking transactions and found that in the outer regions away from major cities OTPs constantly timed out due to reception issues. Barnes notes that based on studies done that the higher the perceived quality of a website is, the higher the yield is. Perceived security is also a concern as what happens technically in the background could not be as secure for example some sites may still have deprecated algorithms such as SSL or TLS1.0 enabled (eRA, 2022).
+A fully digital enterprise is defined by Siemens Digital enterprise article (Siemens, N/A) as a company that has completed its digital transformation by incorporating digital tools and technologies across all its operations. This type of enterprise has many cyber security threats, such as RATs, Zero-Day, Advanced Persistent Threats and Ransomware (Opara E.U. 2021). Opara also states the reason for this is because systems are borderless and cyberspace is interconnected. The reason companies are digitalizing is to become more competitive, efficient and increase market share (Opara E.U. 2021). Digital enterprises introduce a number of new vulnerabilities and one way to mitigate these vulnerabilities is to implement effectual ,intelligent and original controls. (Spremic and Simunic, 2018). I believe for these controls to be intelligent also incorporates the need for environmentally friendly implementations, which as per Loeser, F. (2014), IT senior management struggle to do.
+The article by S Morgan(2019) Cyber security Ventures found that the use of Cloud services made investigation of cyber security threats more efficient and containment of these attacks more cost effective. Kobrin, S.J.( 2017) argues that traditional brick and motor businesses would not survive to a point where economic independence will no longer be sustainable and an independent national market is no longer possible and would most likely be stuck in an international market. This is concerning especially in the growing energy supply crisis. In South Africa our power stations can not longer support the growth of the last 20 years and we have ‘load shedding’ (Eskom, N/A), were the national power supplier cuts power to sections of the country for a few hours daily on a rotational basis. This play havoc with business and all IT infrastructure need to have backup power. The cost of which inevitably is paid for by the consumers.
+There have been numerous well documented cyber attacks over the past years which have cost companies either to close or millions in lost revenue. A breach in 2017 in Sweden of very confidential data stored in a cloud environment exposed national secrets, causing irreputable reputational damage.  In the same year British Airways information system disruption caused over 100 flights from London airports to be cancelled, with an estimated loss of 114 million EUR.
+The security implications of a digital  economy are no longer a small concern for executives, on average companies send 10% of their IT budget on cyber security (Triumph, K. 2023).Not only are concerns of traditional security vulnerabilities required but also emerging technologies such as AI and cloud. Concerns on regulatory requirements also need to be met in an interconnected network which spans across continents in which each country may have different requirements. Global economic trends and dips may no longer be cushioned by strength of local economies. Not to mention the I4.0 revolution. (Ambashstha,A et al, 1970). Cyber security is the defence for all these possible attack vectors.
+
+ Reference:
+Ambastha, A. et al. (1970) Implication of cyber security in a Digital Economy: Learning from corporate sector with special reference to BFSI, SpringerLink. Available at: https://link.springer.com/chapter/10.1007/978-3-030-93464-4_53 (Accessed: 09 November 2023).
+Barnes, S. (2016) in E-commerce and V-Business. London: Routledge, pp. 99–101.
+Bondarouk, E. and Mastenbroek, E., 2018. Reconsidering EU Compliance: Implementation performance in the field of environmental policy. Environmental Policy and Governance, 28(1), pp.15-27.
+C. S. Teoh and A. K. Mahmood, "National cyber security strategies for digital economy," 2017 International Conference on Research and Innovation in Information Systems (ICRIIS), Langkawi, Malaysia, 2017, pp. 1-6, doi: 10.1109/ICRIIS.2017.8002519.
+eRA (2022) TLS 1.1 to be decommissioned to make way for updated security protocol, National Institutes of Health. Available at: https://www.era.nih.gov/news/tls-11-be-decommissioned-make-way-updated-security-protocol.htm (Accessed: 10 November 2023).
+Eskom (no date) Eskom load shedding. Available at: https://loadshedding.eskom.co.za/ (Accessed: 10 November 2023).
+Kobrin, S.J., 2017. Bricks and mortar in a borderless world: Globalization, the backlash, and the multinational enterprise. Global Strategy Journal, 7(2), pp.159-171.
+Loeser, F., Recker, J., Brocke, J.V., Molla, A. and Zarnekow, R., 2017. How IT executives create organizational benefits by translating environmental strategies into Green IS initiatives. Information Systems Journal, 27(4), pp.503-553.
+McKinnon, R. (2019) Introduction: Social security and the digital ... - wiley online library, Introduction: Social security and the digital economy – Managing transformation.
+Available at: https://onlinelibrary.wiley.com/doi/abs/10.1111/issr.12211 (Accessed: 09 November 2023).
+Opara, E.U. and Dieli, O.J., 2021. Enterprise cyber security challenges to medium and large firms: An analysis. International Journal of Electronics and Information Engineering, 13(2), pp.77-85.
+Siemens (no date) Digital Enterprise: Siemens, Siemens Digital Industries Software. Available at: https://www.plm.automation.siemens.com/global/en/our-story/glossary/digital-enterprise/25213 (Accessed: 10 November 2023).
+S. Morgan, ‘Cybersecurity ventures' cybersecurity market report sponsored by secure
+anchor," Cybercrime Magazine, June 10, 2019. (https://cybersecurityventures.com/
+cybersecurity-market-report/)
+Triumph, K. (2023) Cybersecurity costs for small businesses [2022 version], Atlantic. Available at: https://www.atlantic-it.net/cybersecurity-costs-for-small-businesses/#:~:text=On%20average%2C%20companies%20spend%20around,spend%20%24300%2C000%20on%20cybersecurity%20costs. (Accessed: 10 November 2023).
+END.
+
+My Summary :
+
+In summary of the discussion, we have been having on what are the security implications of the digital economy, I have realised that no matter where in the world you are, the digital economy and its cyber threats have become an integral part of this world. Network and software vulnerabilities are easily found via the internet and published CVE's can be looked at from a reconnaissance perspective, as it is one the first steps in the Lockheed and Martin's Kill chain methodology.
+
+We as security experts are aware of the general controls required in an in-depth assessment of people, systems and processes. What I realised from our Solar-winds discussion was that continuous improvement and updates to systems and processes are required as well as continuous training for staff awareness. We should not put 100% of our security faith in only assessments such as penetration tests, as these only look a narrow window of opportunity for vulnerabilities to be exploited. 
+
+As per feedback received it was agreed that cloud-based solutions do provide better security at lower cost but the concentration risk of having all your company data in one solution is risky. No one expects a large cloud service provider such as AWS to suddenly get liquidated or get hacked for that matter, but the possibility exits. The possibility of non-compliance to a myriad of regulations such as GDPR (Service,G.D. 2015) can close or cause major financial loss due to fines imposed. Should your data cross borders and get stored in other countries and they in turn may have other regulations that require these countries access to all data stored, such as the US Patriot Act in which these Governments may abuse their power and use these acts to spy on citizens of the world. The interesting finding that I read in the US Patriot Act was that it now contains a clause that allows, " victims of computer hacking to request law enforcement assistance in monitoring the trespassers on their computers" (Dept of Justice. 2001) This is a win I believe for the cyber security community in the US.
+
+Reference:
+Dept of Justice (2001) The USA PATRIOT Act: Preserving Life and liberty, The USA PATRIOT Act: Preserving Life and Liberty. Available at: https://www.justice.gov/archive/ll/what_is_the_patriot_act.pdf (Accessed: 21 November 2023). 
+PMC (2023) Core competencies, Performance Management Consultants. Available at: https://pmctraining.com/core-competencies/ (Accessed: 21 November 2023). 
+Service, G.D. (2015) Data protection, GOV.UK. Available at: https://www.gov.uk/data-protection (Accessed: 21 November 2023). 
+END.
+
+
