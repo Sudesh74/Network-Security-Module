@@ -1,21 +1,19 @@
-title: "Will Russell"
-email: fellowship@mlh.io
+title: "Sudesh Naidoo"
+email: @gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is an E-portfolio of evidence and discussions held during my Network Security Module at Essex University.
 # Root directory for your portfolio. On GitHub Pages, this is the name of your repository.
-baseurl: "/portfolio-template"
+baseurl: "/E-portfolio-Network Security Module"
 # Protocol + hostname for your portfolio. On GitHub Pages, this is https://yourusername.github.io
-url: "https://mlh-fellowship.github.io" 
-twitter_username: mlhacks
-github_username: mlh-fellowship
-form_url: "https://formspree.io/f/xrgodpqo"
-social_image: "./assets/img/social-link.jpg"
-social_image_alt: # Alt text for the link preview image
-google_analytics_measurement_id: # G-XXXXXXXXXX
+url: "https://sudesh74.github.io" 
+twitter_username: 
+github_username: Sudesh74
+form_url: "https://Networsec Module.io/f/xrgodpqo"
+#social_image: # add image link
+#social_image_alt: # Alt text for the link preview image
+#google_analytics_measurement_id: # G-XXXXXXXXXX
 
-sass:
-  sass_dir: _sass
+#sass:
+  #sass_dir: 
 
-icon: ./assets/img/icon.jpg
+#icon: ./assets/img/icon.jpg
