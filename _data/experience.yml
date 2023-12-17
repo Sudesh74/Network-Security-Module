@@ -32,7 +32,7 @@ cybersecurity-market-report/)
 Triumph, K. (2023) Cybersecurity costs for small businesses [2022 version], Atlantic. Available at: https://www.atlantic-it.net/cybersecurity-costs-for-small-businesses/#:~:text=On%20average%2C%20companies%20spend%20around,spend%20%24300%2C000%20on%20cybersecurity%20costs. (Accessed: 10 November 2023).
 END.
 
-My Summary :
+<Header2> My Summary :
 
 In summary of the discussion, we have been having on what are the security implications of the digital economy, I have realised that no matter where in the world you are, the digital economy and its cyber threats have become an integral part of this world. Network and software vulnerabilities are easily found via the internet and published CVE's can be looked at from a reconnaissance perspective, as it is one the first steps in the Lockheed and Martin's Kill chain methodology.
 
@@ -46,13 +46,13 @@ PMC (2023) Core competencies, Performance Management Consultants. Available at: 
 Service, G.D. (2015) Data protection, GOV.UK. Available at: https://www.gov.uk/data-protection (Accessed: 21 November 2023). 
 END.
 
-Discussion: Solar Winds
+< Header 1> Discussion: Solar Winds
 https://d.docs.live.net/04127c263935855a/Presentation%201.pptx
 https://d.docs.live.net/04127c263935855a/Table%20Solarwinds.xlsx
 Learnings:  This discussions has taught me the value of selecting the correct vulnerability assessment and that sometimes these assessments can be the play book for an attack. In this case as in the presenation table one can view that the Kill Chain vulnerability steps used for security were used in a step by step method by the attackers.
 In the Security Architecture module we used the Attack Tree model and in this module we used the Kill Chain model by Lockheed Martins.
 
-Discussion: Draft Vulnerability report
+<Header 1> Discussion: Draft Vulnerability report
 Vulnerability Report
 Introduction:
 This vulnerability report will show the theorectical possibilities of specific attack vectors based on the Lockheed and Martin Kill Chain methodology. Other methodologies were considred such as  Attack tree and the Microsoft Threat modeling tool (MTMT). The Attack tree was not used because it required extensive knowledge of threat possibilities and could easily miss threat vectors. The MTMT required knowledge of the architecture. 
@@ -109,12 +109,12 @@ S, A. (2023) 10 most common PHP Security threats and the best ways to fix them, 
 ImpressMe (no date) Impress CMS -policy, Hackerone. Available at: https://hackerone.com/impresscms/policy_versions?change=3681730 (Accessed: 24 November 2023). 
 Kali (2022) Kali tools: Kali linux tools, Kali Linux. Available at: https://www.kali.org/tools/ (Accessed: 26 November 2023). 
 
-Header: Tools user in Kali
+<Header 2> Tools user in Kali:
 Learnig out comes:  Kali was initially a bit confusing but after a few days the basics were simple to use. Some of the tools require more research that others and required permission from the owners of the website being scanned. Which wasnt used.
 The number of tools available is amazing, although at work we are not allowed to use any of these tools and I can see why now.
 Most exploits can be committed once you are in the environment. I think that is wht phishing is used alot. It does not require the hours needs to get through if possible the controls setup.
 
-Kali tools and finds used :
+Kali tools and findings used :
 NIKTO -host impressme.org.uk
 results:
  Target IP:          68.66.247.187
@@ -135,11 +135,99 @@ Pentest scan exploits :
 1)  High Risk Vulnerability verified from Network pen test scan(PenTest. ND),CVE-2022-38178 - By spoofing the target resolver with responses that have a malformed EdDSA signature, an attacker can trigger a small memory leak. Exploit: Kali (Metasploit) available https://www.exploit-db.com/exploits/6122.  Mitigation: Upgrade to the patched release most closely related to your current version of BIND refer to Krizek, T. 2022.
 2) As per vulnerability scan 13 open ports were identified (21,25,53,80,110,143,443,465,587,993,995,3306,5432) 
 
-
-references:
+DNSENM -f ;  no data 
 CAU (2008) Bind 9.4.1 &amp;lt; 9.4.2 - remote DNS cache poisoning (metasploit), Exploit Database. Available at: https://www.exploit-db.com/exploits/6122 (Accessed: 06 December 2023). 
 PenTest (no date) Comprehensive web vulnerability scanner: Try a free scan, Pentest Website Vulnerability Scanning. Available at: https://pentest-tools.com/website-vulnerability-scanning/website-scanner (Accessed: 25 November 2023). 
 Krizek, T. (2022) CVE-2022-38178: Memory leaks in EDDSA DNSSEC verification code, ISC Knowledgebase. Available at: https://kb.isc.org/docs/cve-2022-38178 (Accessed: 06 December 2023). 
 
 DNSENM -f ;  no data 
+Nikito - scans web-based applications for bad files , detecte outdated configs , ports scanning username enumeration.
+https://www.tutorialspoint.com/kali_linux/kali_linux_website_penetration_testing.htmVega tool:
+end..
+
+CMD commands used:
+1) NSLookup 
+2) Whois ( required downloading of application)
+Internet tools:
+1) mxtoolbox.com - If you are encountering this error of No DMARC Record found, this means that your domain does not have a published DMARC record. DMARC Records are published via DNS as a text(TXT) record. They will let receiving servers know what they should do with non received from your domain-aligned email
+
+Learning outcomes : Vulnerabilities:
+How many hops from your machine to your assigned website? 17
+Which step causes the biggest delay in the route? What is the average duration of that delay? From London1 server to the host Network
+What are the main nameservers for the website?NS1.A2hosting.com
+ns2.a2hosting.com
+ns3.a2hosting.com
+ns4.a2hosting.com
+
+Who is the registered contact?ENOM.com, anything further is redacted due to privacy laws
+What is the MX record for the website? as MXtool box.com this is not set. Also DMARC is not set which means this domain can be used for spamming - possible vulnerability
+Where is the website hosted?
+London
+
+Vulnerabilities identified via website:
+
+MarinaDB - VUlnerabilities:
+https://www.cvedetails.com/vulnerability-list/vendor_id-12010/opec-1/Mariadb.html#:~:text=MariaDB%20CONNECT%20Storage%20Engine%20Heap,the%20processing%20of%20SQL%20queries.
+
+checkout MySQL as well?
+Possible tools to check vulnerabilities in DB's on Kali are:
+JSQL injection available on GitHub - finds db information from a remote server. Used to find and exploit SQLinjection vulnerabilities. Can create webshell and SQL shell - possible attack vector
+Kali tool - Hydra - $pw-inspector; dpl4hyra; hydra-gt
+wireshark ; $ recon-web - ttol recon-ng
+https://www.kali.org/tools/
+
+Vulnerabilities tools available on Kali:
+
+Slack applcation ; was hacked in 2015
+https://expertinsights.com/insights/how-secure-is-slack-for-your-business/#:~:text=Just%20this%20week%2C%20another%20security,information%2C%20as%20reported%20by%20Threatpost.
+
+- Libraries no longer valid
+
+<Header 1> Discussion: The Pros and cons of logging – The impact of log4j
+To help identify suspicious activities logs are analysed.The vast amount of data  from firewalls, syslogs, web server logs, database logs etc  and what triggers events logged is a manual nightmare  (Ekelhart et al. 2019). Semi-automated processes are a requirement. Further to this are the complexity of new attack vectors (Ekelhart et al. 2019).
+⦁	 Logs may not provide root cause of the attack.
+⦁	Formats and terminologies  are inconsistent across platforms.
+⦁	Log integration and specialist knowledge and expertise is required to put the puzzle together.
+⦁	Log architecture and communication needs to also be secured, Ekelhart et al. prefers Json-LD in role based access.
+⦁	SIEMs approach is to collect raw data logs abd integrate at query time which is slow and time consuming.
+⦁	Log analysis is a reactive control.
+Pros (Baldani, M. 2023)
+⦁	Data can be analysed and provides insight for decisions.
+⦁	Reduces security breaches ( improves dectection time).
+⦁	Easier to comply to regulatory requirements.
+⦁	Improves time required for repairing issues.
+⦁	Used in Forensic investigations.
+
+The Log4j is an exploit identified in a Java library which allows an attacker to take control of an internet connected device remotely(Berger, A. 2021). Four patches were released in a month to resolve this issue. The initial patches did not fix the overall issue. In terms of the logs picking up this vulnerability, I think would not have been possible. Consequential events such as the computer requesting IP addresses outside it normal connections and possible increase in data being sent out may have been signs. Log4j is allowed to create simple to advanced logs, upload basic website information to technical details of the system running the library. (Berger, A. 2021)
+
+Reference:
+Ekelhart, A., Kiesling, E. and Kurniawan, K. (2019). Taming the logs - Vocabularies for semantic security analysis. Procedia Computer Science, 137, pp.109–119. doi:https://doi.org/10.1016/j.procs.2018.09.011.
+Baldani, M.(2023). What are the benefits of log management.[online]Sumo Logic. Available at: https://www.sumologic.com/blog/benefits-log-management/ [Accessed 29 Nov.2023].
+Berger, A. (2021). What is Log4Shell? The Log4j vulnerability explained (and what to do about it). [online] Dynatrace news. Available at: https://www.dynatrace.com/news/blog/what-is-log4shell/?utm_source=google&utm_medium=cpc&utm_term=log4j%20vulnerability%20explained&utm_campaign=uk-application-security&utm_content=none [Accessed 28 Nov. 2023].
+ referenced.
+https://impressme.org.uk/
+
+< Header 1>  Reflections per Unit:
+<Header 2> Unit 2:
+Microsoft Threat modeling tool was not used as it required internal knowledge of connections and architecture. It was not possible for just a website analysis.
+Use of Tree model was also considred. I stayed with the Lockheed Martins methology. Some frameworks were specific for certain industries such as FFIEC.
+
+<Header 2> Unit 3:
+Learning outcomes : Vulnerabilities:
+How many hops from your machine to your assigned website? 17
+Which step causes the biggest delay in the route? What is the average duration of that delay? From London1 server to the host Network
+What are the main nameservers for the website?NS1.A2hosting.com
+ns2.a2hosting.com
+ns3.a2hosting.com
+ns4.a2hosting.com
+
+Who is the registered contact?ENOM.com, anything further is redacted due to privacy laws
+What is the MX record for the website? as MXtool box.com this is not set. Also DMARC is not set which means this domain can be used for spamming - possible vulnerability
+Where is the website hosted?
+London.
+
+<Header 2> Unit 4
+
+
+
 
