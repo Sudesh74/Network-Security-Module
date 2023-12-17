@@ -51,3 +51,95 @@ https://d.docs.live.net/04127c263935855a/Presentation%201.pptx
 https://d.docs.live.net/04127c263935855a/Table%20Solarwinds.xlsx
 Learnings:  This discussions has taught me the value of selecting the correct vulnerability assessment and that sometimes these assessments can be the play book for an attack. In this case as in the presenation table one can view that the Kill Chain vulnerability steps used for security were used in a step by step method by the attackers.
 In the Security Architecture module we used the Attack Tree model and in this module we used the Kill Chain model by Lockheed Martins.
+
+Discussion: Draft Vulnerability report
+Vulnerability Report
+Introduction:
+This vulnerability report will show the theorectical possibilities of specific attack vectors based on the Lockheed and Martin Kill Chain methodology. Other methodologies were considred such as  Attack tree and the Microsoft Threat modeling tool (MTMT). The Attack tree was not used because it required extensive knowledge of threat possibilities and could easily miss threat vectors. The MTMT required knowledge of the architecture. 
+The Kill chain methodology uses six steps, Reconnaissance, Weaponization, Delivery,Exploitation, Installation, C2, Actions on Objectives. Where possible these steps will be used to verify threats, exploits and tools available. The website that I chose was impressme.org.uk. The below is a plan of attack and mitigation controls that should be in place.
+The planned tool for vulnerability testing and exploits is Kali Linux, using remote exploits and manaul testing. Step reconnaissance to 2 days to complete and penetration and scanning is expected to take 3 to 4 days.  No business impact is expected as these tools could not be used in an exploit if it impacted network traffic and would be considred an attack.
+
+ Reconnaissance
+A visual reconnaissance was done on the site as well as a free pen test scan (Pentest. ND).
+Known ports used by Impressme.org.uk shown in table below. Tools that can be used to exploit these ports are Metaspoitable and Metaspoitable2 in Kali.
+ 
+open ports 21,25,53,80,110,143,443,465,587,993,995,3306,5432.
+ 
+
+insert table1
+Planned Kill chain steps are reliant on the outcome of the Kali tools penetration tests and available information that can be obtained.
+Known Vulnerabilities identified of applications and Data Bases in use:
+1) MaridaDB (SecurityScoreCard. ND)
+⦁	CONNECT Storage Engine Heap-based Buffer Overflow Privilege Escalation Vulnerability -CVE-2022-24052. Attacks can escalate previlages . (ZeroDayInitiative. 2022).
+⦁	Remote code execution - CVE-2021-27928. A patch was deployed.
+⦁	Execution of code -CVE-2016-6662. A patch was deployed.
+
+2) MySql (SQLMAP tool)
+⦁	Exploit via SQL injection attack if the attacker has file-system wrtie permissions - CVE-2016-6662 (Dotan,O. 2019).
+⦁	CVE-2023-21880 allows high privileged attacker ability to crash system or unauthorized update or delete. (Oracle. 2023).
+3) Mail Chimp
+⦁	Hacked 2023 for the second time(Papachristou, L. 2023). Has a valid ISO27001 certifiacte.
+⦁	Client data may already be compromised (Impressme.org.uk is required by law to advise their clients.)
+
+4) PHP
+⦁	10 known vulnerabilities;XSS, SQL Injection, Cross site request forgery,remote code execution, file inclusion vulnerabilities, session hijacking, Insecure direct oject referencing, Invalidated file uploads, Insecure Crytography and code Injection (S, A. 2023).
+Planned actions
+Some policy changes may require changes. What analysis of the page found was that Root password is given to clients to upload and install. Guidelines also advise cleints to write down their passwords.
+Next steps will be to use tools in Kali linux that help analyse vulnerabilities identified and those common standards and CVE's that could potentially not have been patched.Limitations of tools used is expected as firtsly all security check points will still be in place that may mitigate finindings. Secondly I have no expertise in Kali Linux. Thirdly time is a major consideration when doing a vulnerability test as many hackers may take months to years in the reconnissance phase. 
+Possible tools (Kali. 2022)
+⦁	 $pw-inspector; 
+⦁	dpl4hyra;
+⦁	 hydra-gt
+⦁	wireshark
+⦁	$ recon-web - ttol recon-ng
+⦁	Metaspoitable
+
+
+References:
+PenTest (no date) Comprehensive web vulnerability scanner: Try a free scan, Pentest Website Vulnerability Scanning. Available at: https://pentest-tools.com/website-vulnerability-scanning/website-scanner (Accessed: 25 November 2023). 
+Gamer, M. (2021) Attack on open ports in metasploitable | FTP server hack, YouTube. Available at: https://www.youtube.com/watch?v=YriYszGRCaI (Accessed: 25 November 2023). 
+SecurityScorecard (no date) Mariadb : Security vulnerabilities, CVES code execution, Mariadb : Security vulnerabilities, CVEs Code Execution. Available at: https://www.cvedetails.com/vulnerability-list/vendor_id-12010/opec-1/Mariadb.html#:~:text=MariaDB%20CONNECT%20Storage%20Engine%20Heap,the%20processing%20of%20SQL%20queries. (Accessed: 23 November 2023). 
+Zero Day Initiative (2022) Security vulnerabilities fixed in mariadb, MariaDB KnowledgeBase. Available at: https://mariadb.com/kb/en/security/ (Accessed: 25 November 2023). 
+MITRE (2016) 2016-6662 : Oracle mysql through 5.5.52, 5.6.x through 5.6.33, and 5.7.x through 5.7.15; mariadb before 5.5.51, 10.0.x before 10.0.2, CVE. Available at: https://www.cvedetails.com/cve/CVE-2016-6662/ (Accessed: 25 November 2023). 
+Dotan, O. (2019) The latest mysql vulnerability calls for moving-target defense, TechBeacon. Available at: https://techbeacon.com/security/latest-mysql-vulnerability-calls-new-defense#:~:text=CVE%2D2016%2D6662%2C%20a,writing%20permission%20at%20some%20level. (Accessed: 23 November 2023).  
+Oracle (2023) 2023-21880 : Vulnerability in the mysql server product of Oracle mysql (component: Innodb). supported versions that are affected are, CVE. Available at: https://www.cvedetails.com/cve/CVE-2023-21880/ (Accessed: 25 November 2023). 
+Papachristou, L. (2023) Mailchimp newsletter service says it was hacked-again, Bloomberg.com. Available at: https://www.bloomberg.com/news/articles/2023-01-18/newsletter-service-mailchimp-says-it-was-hacked-again#xj4y7vzkg (Accessed: 25 November 2023). 
+Mailchimp (2023) Information about a recent security incident, Mailchimp. Available at: https://mailchimp.com/newsroom/january-2023-security-incident/ (Accessed: 25 November 2023). 
+S, A. (2023) 10 most common PHP Security threats and the best ways to fix them, Atatus Blog - For DevOps Engineers, Web App Developers and Server Admins. Available at: https://www.atatus.com/blog/php-security-threats-and-vulnerabilities/ (Accessed: 26 November 2023). 
+ImpressMe (no date) Impress CMS -policy, Hackerone. Available at: https://hackerone.com/impresscms/policy_versions?change=3681730 (Accessed: 24 November 2023). 
+Kali (2022) Kali tools: Kali linux tools, Kali Linux. Available at: https://www.kali.org/tools/ (Accessed: 26 November 2023). 
+
+Header: Tools user in Kali
+Learnig out comes:  Kali was initially a bit confusing but after a few days the basics were simple to use. Some of the tools require more research that others and required permission from the owners of the website being scanned. Which wasnt used.
+The number of tools available is amazing, although at work we are not allowed to use any of these tools and I can see why now.
+Most exploits can be committed once you are in the environment. I think that is wht phishing is used alot. It does not require the hours needs to get through if possible the controls setup.
+
+Kali tools and finds used :
+NIKTO -host impressme.org.uk
+results:
+ Target IP:          68.66.247.187
++ Target Hostname:    impressme.org.uk
++ Target Port:        80
++ Start Time:         2023-12-02 22:01:12 (GMT2)
+---------------------------------------------------------------------------
++ Server: Apache 
++ /: Retrieved x-powered-by header: PHP/7.4.33.
++ /: Cookie ICMSSESSION created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
++ : Server banner changed from 'Apache' to 'imunify360-webshield/1.21'.
++ /MmEZK61H.htr: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
+
+It possible to modify HTTPS to HTTP with Burp suite and create a spoofed website. 
+One could easily exploit this and re-direct traffic to the spoofed site.
+
+Pentest scan exploits :
+1)  High Risk Vulnerability verified from Network pen test scan(PenTest. ND),CVE-2022-38178 - By spoofing the target resolver with responses that have a malformed EdDSA signature, an attacker can trigger a small memory leak. Exploit: Kali (Metasploit) available https://www.exploit-db.com/exploits/6122.  Mitigation: Upgrade to the patched release most closely related to your current version of BIND refer to Krizek, T. 2022.
+2) As per vulnerability scan 13 open ports were identified (21,25,53,80,110,143,443,465,587,993,995,3306,5432) 
+
+
+references:
+CAU (2008) Bind 9.4.1 &amp;lt; 9.4.2 - remote DNS cache poisoning (metasploit), Exploit Database. Available at: https://www.exploit-db.com/exploits/6122 (Accessed: 06 December 2023). 
+PenTest (no date) Comprehensive web vulnerability scanner: Try a free scan, Pentest Website Vulnerability Scanning. Available at: https://pentest-tools.com/website-vulnerability-scanning/website-scanner (Accessed: 25 November 2023). 
+Krizek, T. (2022) CVE-2022-38178: Memory leaks in EDDSA DNSSEC verification code, ISC Knowledgebase. Available at: https://kb.isc.org/docs/cve-2022-38178 (Accessed: 06 December 2023). 
+
+DNSENM -f ;  no data 
+
